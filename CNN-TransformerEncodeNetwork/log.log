@@ -1,0 +1,20 @@
+nohup: ignoring input
+=> merge config from configs/swin_tiny_patch4_window7_224_lite.yaml
+pretrained_path:./pretrained_ckpt/swin_tiny_patch4_window7_224.pth
+---start load pretrained modle of swin encoder---
+delete:norm.weight;shape pretrain:torch.Size([768, 1536]);shape model:torch.Size([384])
+delete:norm.bias;shape pretrain:torch.Size([768, 1536]);shape model:torch.Size([384])
+Namespace(accumulation_steps=None, amp_opt_level='O1', base_lr=0.05, batch_size=24, cache_mode='part', cfg='configs/swin_tiny_patch4_window7_224_lite.yaml', dataset='Synapse', deterministic=1, eval=False, img_size=224, list_dir='./lists/lists_Synapse', max_epochs=150, max_iterations=30000, n_gpu=1, num_classes=9, opts=None, output_dir='savemodel', resume=None, root_path='./data/Synapse/train_npz', seed=1234, tag=None, throughput=False, use_checkpoint=False, zip=False)
+The length of train set is: 2211
+93 iterations per epoch. 13950 max iterations 
+  0%|                                         | 0/150 [00:00<?, ?it/s]iteration 1 : loss : 1.182318, loss_ce: 1.778187
+iteration 2 : loss : 1.127171, loss_ce: 1.625618
+iteration 3 : loss : 1.051086, loss_ce: 1.413322
+iteration 4 : loss : 0.952912, loss_ce: 1.147532
+iteration 5 : loss : 0.864594, loss_ce: 0.907272
+iteration 6 : loss : 0.787879, loss_ce: 0.639785
+iteration 7 : loss : 0.713790, loss_ce: 0.413212
+iteration 8 : loss : 0.682304, loss_ce: 0.277007
+iteration 9 : loss : 0.683262, loss_ce: 0.288614
+iteration 10 : loss : 0.691479, loss_ce: 0.324120
+iteration 11 : loss : 0.660330, loss_ce: 0.257723
